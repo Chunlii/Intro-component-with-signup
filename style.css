@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+}
+.text-area{
+    width: 50%;
+    margin-right: 40px;
+}
+.text-area p{
+    opacity: .8;
+    font-size: 1em;
+}
+.text-area h1{
+    font-size: 2.2em;
+}
+.form-area{
+    width: 50%;
+}
+.trial-box{
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    font-size: .8em;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+
+}
+.box{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 30px;
+    margin: auto;
+}
+.form-line{
+    position: relative;
+    margin-bottom: 30px;
+}
+.form-line small{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    opacity: 0;
+    text-align: right;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 15px 15px;
+    width: 100%;
+}
+input:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    width: 100%;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    box-shadow: 0 0 hsl(154, 59%, 40%);
+    padding: 17px;
+}
+button:hover{
+    box-shadow: 0 0 hsl(154, 47%, 32%);
+    padding: 17px;
+}
+small{
+    color: #bbb;
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
+small a{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 900px){
+    body{
+        margin: 0px;
+    }
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .text-area{
+        margin: -30px 0px 0px 0px;
+        text-align: center;
+        width: 88%;
+        margin-bottom: 30px;
+    }
+    .text-area h1{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .text-area p{
+        font-size: .9em;
+    }
+    .form-area{
+        width: 88%;
+    }
+    .trial-box{
+        margin-top: 10px;
+        padding: 10px 12px;
+    }
+    .box{
+        padding: 10px  20px ;
+    }
+    .form-line{
+        margin: 13px 0px ;
+    }
+}
+@media (max-width: 480px){}
